@@ -1,0 +1,47 @@
+{
+    "name": "sp-dashboard",
+    "version": "1.0.0",
+    "description": "A basic dashboard solution for SharePoint 2013/Online.",
+    "main": "src/index.ts",
+    "scripts": {
+        "all": "node ./clean.js && npm run build && npm run prod && npm run spfx",
+        "build": "webpack --mode=development",
+        "prod": "webpack --mode=production",
+        "spfx": "cd spfx && npm run package",
+        "typings": "dts-bundle --configJson dts-bundle.json"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gunjandatta/sp-dashboard.git"
+    },
+    "keywords": [],
+    "author": "Gunjan Datta",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/gunjandatta/sp-dashboard/issues"
+    },
+    "homepage": "https://github.com/gunjandatta/sp-dashboard#readme",
+    "dependencies": {
+        "datatables.net": "^1.13.7",
+        "datatables.net-bs5": "^1.13.7",
+        "dattatable": "^2.9.24",
+        "gd-sprest-bs": "^10.10.74",
+        "jquery": "^3.7.1",
+        "moment": "^2.29.4"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.23.3",
+        "@babel/preset-env": "^7.23.3",
+        "babel-loader": "^8.3.0",
+        "css-loader": "^6.8.1",
+        "html-loader": "^3.1.2",
+        "sass": "^1.69.5",
+        "sass-loader": "^13.3.2",
+        "style-loader": "^3.3.3",
+        "ts-loader": "^9.5.0",
+        "typescript": "^4.9.5",
+        "url-loader": "^4.1.1",
+        "webpack": "^5.89.0",
+        "webpack-cli": "^4.10.0"
+    }
+}
